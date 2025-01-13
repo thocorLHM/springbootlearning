@@ -11,10 +11,10 @@
 
 
     <groupId>de.muenchen.tc.group.frontend</groupId>
-    <artifactId>artifact-thomas-frontend</artifactId>
+    <artifactId>quadrierung-frontend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>artifact_thomas_frontend</name>
+    <name>quadrierung_frontend</name>
 
 
     <properties>

@@ -48,7 +48,7 @@ function startService() {
     console.error("Die Nummer ist nicht definiert.");
     return;
   }
-  const url = `${API_BASE}/ cal?number=${encodeURIComponent(number.value)}`;
+  const url = `${API_BASE}/cal?number=${encodeURIComponent(number.value)}`;
   fetch(url, FetchUtils.getGETConfig())
     .then((response) => {
       FetchUtils.defaultResponseHandler(

@@ -13,10 +13,10 @@
 
 
     <groupId>de.muenchen.tc.group.apigateway</groupId>
-    <artifactId>artifact-thomas-apigateway</artifactId>
+    <artifactId>quadrierung-apigateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>artifact_thomas_apigateway</name>
+    <name>quadrierung_apigateway</name>
 
 
     <properties>
@@ -158,7 +158,7 @@
         <!-- Frontend Lib -->
         <dependency>
             <groupId>de.muenchen.tc.group.frontend</groupId>
-            <artifactId>artifact-thomas-frontend</artifactId>
+            <artifactId>quadrierung-frontend</artifactId>
             <version>${project.version}</version>
             <scope>runtime</scope>
         </dependency>

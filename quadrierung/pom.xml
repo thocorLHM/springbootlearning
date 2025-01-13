@@ -13,10 +13,10 @@
 
 
     <groupId>de.muenchen.tc.group</groupId>
-    <artifactId>artifact-thomas</artifactId>
+    <artifactId>quadrierung</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>artifact_thomas</name>
+    <name>quadrierung</name>
 
 
     <properties>
