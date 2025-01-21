@@ -1,10 +1,12 @@
 package com.example.quad.controller;
 
+import com.example.quad.entities.Calculation;
 import com.example.quad.services.QuadService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
 
 @RestController
 public class Service2QuadController {
@@ -13,9 +15,14 @@ public class Service2QuadController {
     private QuadService quadService;
 
     @PostMapping("/quad")
-    public int quad(@RequestBody int a) {
+    public int quad(@RequestBody int inputNumber) {
 
-        int result = quadService.quadNumber(a);
-        return result;
+        return quadService.quadNumber(inputNumber);
+    }
+
+    @PostMapping("/send2databank")
+    public Calculation calculateAndSave(@RequestBody int inputNumber) {
+        // Delegiere die Berechnung und Speicherung an den Service
+        return quadService.quadNumberandSave(inputNumber);
     }
 }
