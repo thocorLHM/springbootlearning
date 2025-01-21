@@ -19,8 +19,8 @@
       </p>
     </v-col>
       <v-col cols="12">
-        <button id="saver" @click="databankStartUp"> <p>{{number}} und {{result}} in die</p>
-                            <p>h2 in-memory-Datenbank speichern!</p>
+        <button id="saver" @click="databankStartUp">{{number}} und {{result}} in die
+                            h2 in-memory-Datenbank speichern!
         </button>
       </v-col>
     </v-row>
