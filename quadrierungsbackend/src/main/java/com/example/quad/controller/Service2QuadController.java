@@ -16,7 +16,6 @@ public class Service2QuadController {
 
     @PostMapping("/quad")
     public int quad(@RequestBody int inputNumber) {
-
         return quadService.quadNumber(inputNumber);
     }
 
