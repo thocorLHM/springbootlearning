@@ -20,6 +20,4 @@ public class CalculationRepository {
                             calculation.getSquaredNumber(),
                             calculation.getCalculatedAt() != null ? calculation.getCalculatedAt() : LocalDateTime.now());
     }
-
-
 }
