@@ -14,17 +14,19 @@ public class QuadService {
     private CalculationRepository calculationRepository;
 
     public int quadNumber(int inputNumber) {
-
         return inputNumber*inputNumber;
     }
 
     public Calculation quadNumberandSave(Integer inputNumber){
 
         Calculation calculation = new Calculation();
+
         calculation.setInputNumber(inputNumber);
         calculation.setSquaredNumber(inputNumber*inputNumber);
         calculation.setCalculatedAt(LocalDateTime.now());
+
         calculationRepository.save(calculation);
+
         return calculation;
     }
 }
